@@ -5,7 +5,6 @@ import com.wearit.dao.custom.SizeDao;
 import com.wearit.dto.SizesDTO;
 import com.wearit.model.Sizes;
 import com.wearit.service.custom.SizesService;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +16,8 @@ import java.util.List;
 @Service
 public class SizesServiceImpl implements SizesService{
 
-    @Autowired
-    ObjectMapper modelMapper;
+   @Autowired
+   ObjectMapper modelMapper;
 
     @Autowired
     SizeDao sizeDao;
